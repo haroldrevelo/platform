@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Progress.module.css"
+import "react-circular-progressbar/dist/styles.css";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 function Progress() {
@@ -15,7 +16,6 @@ function Progress() {
                 <CircularProgressbar
                     value={percentage}
                     text={`${percentage}%`}
-                    x= '25'
                     styles={buildStyles({
                     textColor: "#ffffff",
                     textSize: "25px",
@@ -23,6 +23,9 @@ function Progress() {
                     trailColor: "#FF794F"
                     })}
                 />
+                </div>
+                <div className={style.infoProgress}>
+
                 </div>
                 
             </div>

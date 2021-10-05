@@ -104,7 +104,7 @@
     display: flex;
     width: 45%;
     align-items: center;
-    margin: 30px auto;
+    margin: 25px auto;
 }
 
 .titleProgress {
@@ -116,5 +116,14 @@
     letter-spacing: -0.86px;
     line-height: 36px;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
+}
+
+.infoProgress{
+    height: 105px;
+    width: 332px;
+    border-radius: 19px;
+    background-color: rgba(198,198,205,0.13);
+    display: flex;
+    margin: auto;
 }
