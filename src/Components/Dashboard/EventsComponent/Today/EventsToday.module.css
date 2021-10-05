@@ -1,0 +1,61 @@
+.container {
+    margin-top: 10px;
+}
+
+.spanTop {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: -15px;
+    font-family: Gotham;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 26px;
+    color: #103460;
+}
+
+.divToday {
+    margin-left: 30px;
+    padding: 0;
+    margin-right: -35px;
+}
+
+.divHr {
+    height: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.divHr hr {
+    height: 2px !important;
+    margin: 11px 0;
+    width: 240px !important;
+    padding: 0;
+}
+
+.cardContainer {
+    display: flex;
+    height: 109px;
+    width: 370px;
+    border-radius: 11px;
+    background-color: #FFFFFF;
+    box-shadow: 0 22px 34px 0 rgba(27, 20, 119, 0.02);
+    align-items: center;
+    padding: 25px;
+    margin: 20px 0 0 30px;
+}
+
+.card h6 {
+    font-family: Gilroy;
+    font-size: 18px;
+    color: #192452;
+    padding-left: 9px;
+}
+
+.card span {
+    font-family: Gilroy;
+    font-style: italic;
+    font-size: 16px;
+    color: #192452;
+    padding-left: 9px;
+}

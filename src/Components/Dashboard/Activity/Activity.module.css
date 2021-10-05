@@ -1,0 +1,44 @@
+.title {
+    font-family: Gotham;
+    font-style: oblique;
+    font-size: 30px;
+    color: #103460;
+    line-height: 36px;
+    margin-bottom: -5px;
+}
+
+.divHr {
+    height: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.divHr hr {
+    height: 2px !important;
+    margin: 17px 0 0 40px;
+    width: 1020px !important;
+    padding: 0;
+}
+
+.buttonContainer{
+    text-align: end;
+}
+
+.buttonArrow {
+    height: 32px;
+    width: 47px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgba(157, 155, 182, 0.17);
+}
+
+.imgArrow {
+    height: 26px;
+    width: 15px;
+    color: #3E3A6F;
+    font-family: Feather-Icons;
+    font-size: 15px;
+    letter-spacing: -0.43px;
+    line-height: 26px;
+    text-align: center;
+}

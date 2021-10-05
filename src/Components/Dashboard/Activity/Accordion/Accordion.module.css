@@ -1,0 +1,48 @@
+.container{
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 22px 34px 0 rgba(27,20,119,0.11);
+    margin: 15px 0;
+}
+
+.cardContainer{
+    display: flex;    
+    padding: 15px 10px 15px 10px;    
+    align-items: center;
+    width: 100%;
+}
+
+.imgIcon{
+    margin-left: 10px;
+}
+
+.textP{
+    margin: auto 0 auto -20px;
+}
+
+.textP p {
+    margin: auto;
+    color: #9D9BB6;
+    font-family: Nunito;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+.textP strong {
+    color: #3D84FF;
+}
+
+.divToggle{
+    margin: 0 10px 0 auto;
+}
+
+.textOpen{
+    margin: 0px 90px;
+    padding: 10px;
+    color: #103460;
+    font-family: Nunito;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 25px;
+}

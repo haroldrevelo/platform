@@ -1,0 +1,120 @@
+.container {
+    padding: 0 0 200px 0;
+    margin-bottom: 0;
+}
+
+.containerStatistics {
+    height: 423px;
+    width: 404px;
+    border-radius: 7px;
+    background-color: #1A2D7D;
+    box-shadow: 6px 32px 45px 0 rgba(36, 53, 157, 0.13);
+}
+
+.divTitle {
+    margin: 0 0 0 72px;
+}
+
+.title {
+    font-family: Gotham;
+    font-style: oblique;
+    font-size: 30px;
+    color: #103460;
+    line-height: 36px;
+    margin-bottom: -5px;
+}
+
+.divHr {
+    height: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.divHr hr {
+    height: 2px !important;
+    margin: 19px 0 0 20px;
+    width: 570px !important;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    height: 79px;
+    width: 207px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    margin: 0 0 0 72px;
+    align-items: center;
+}
+
+.card2 {
+    display: flex;
+    height: 79px;
+    width: 207px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    margin: 0 0 0 60px;
+    align-items: center;
+}
+
+.spanText {
+    color: #9C9AB5;
+    font-family: Gotham;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: -0.49px;
+    line-height: 18px;
+}
+
+.spanNum {
+    color: #103460;
+    font-family: Gotham;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: right;
+    margin: 0 0 0 auto;
+}
+
+.confirm {
+    height: 86px;
+    width: 740px !important;
+    background-image: url('./../../../Assets/IMG/Oval + Oval + Oval Mask.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 72px;
+    color: #FFFFFF;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 26px;
+    border-radius: 5px;
+}
+
+.confirm span {
+    margin: 0 0 0 auto
+}
+
+.progressBar {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.titleProgress {
+    color: #FFFFFF;
+    font-family: Gotham;
+    font-style: oblique;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -0.86px;
+    line-height: 36px;
+    text-align: center;
+    margin: 20px 0;
+}

@@ -1,0 +1,385 @@
+.sidenavNav {
+    margin-top: 90px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1006;
+    min-width: 55px;
+    background: #3D84FF;
+    height: 1800px;
+    -webkit-transition: min-width 0.2s;
+    -moz-transition: min-width 0.2s;
+    -o-transition: min-width 0.2s;
+    -ms-transition: min-width 0.2s;
+    transition: min-width 0.2s;
+}
+
+.sidenavNav.sidenavCollapsed .sidenavMenu .sidenavItem .sidenavSubnav {
+    display: none;
+}
+
+.sidenavNav.sidenavCollapsed .sidenavMenu .sidenavItem:hover>.sidenavSubnav {
+    display: block;
+}
+
+.sidenavNav.sidenavExpanded {
+    min-width: 240px;
+}
+
+.sidenavNav.sidenavExpanded .sidenavMenu>.sidenavItem .sidenavNavIcon+.sidenavNavText {
+    visibility: visible;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+.sidenavNav.sidenavExpanded .sidenavMenu>.sidenavItem.sidenavExpandable>.sidenavNavItem {
+    cursor: pointer;
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav {
+    position: static;
+    border: none;
+    float: left;
+    clear: both;
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.sidenavNav.sidenavExpanded .sidenavMenu>.sidenavItem.sidenavExpanded .sidenavSubnav {
+    display: block;
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav {
+    display: none;
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav>.sidenavSubnavItem {
+    position: relative;
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav>.sidenavSubnavItem::before {
+    content: " ";
+    width: 100%;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav>.sidenavSubnavItem:first-child {
+    display: none;
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav>.sidenavSubnavItem:hover::before {
+    background: #fff;
+    opacity: 0.15;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+    filter: alpha(opacity=15);
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav>.sidenavSubnavItem::before {
+    content: " ";
+    width: 100%;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav>.sidenavSubnavItem.sidenavSelected>.sidenavNavItem {
+    color: #fff;
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav>.sidenavSubnavItem.sidenavSelected>.sidenavNavItem::before {
+    content: " ";
+    width: 2px;
+    height: 20px;
+    left: 10px;
+    top: 4px;
+    position: absolute;
+    border-left: 2px #fff solid;
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav>.sidenavSubnavItem:hover>.sidenavNavItem {
+    background: transparent;
+    color: #fff;
+}
+
+.sidenavNav.sidenavExpanded .sidenavSubnav>.sidenavSubnavItem>.sidenavNavItem {
+    color: #f9dcdd;
+    padding: 0 14px 0 20px;
+    line-height: 28px;
+}
+
+.sidenavToggle {
+    position: relative;
+    float: left;
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.sidenavToggle:focus {
+    outline: none;
+}
+
+.sidenavToggle .sidenavIconBar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 1px;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    transition: all 0.15s;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+}
+
+.sidenavToggle .sidenavIconBar+.sidenavIconBar {
+    margin-top: 4px;
+}
+
+.sidenavNav.sidenavExpanded .sidenavToggle .sidenavIconBar {
+    width: 25px;
+}
+
+.sidenavNav.sidenavExpanded .sidenavToggle .sidenavIconBar:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.sidenavNav.sidenavExpanded .sidenavToggle .sidenavIconBar:nth-child(2) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+.sidenavNav.sidenavExpanded .sidenavToggle .sidenavIconBar:nth-child(3) {
+    margin-top: -8px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.sidenavMenu {
+    float: left;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    list-style: none;
+    width: 100%;
+}
+
+.sidenavMenu>.sidenavItem {
+    clear: both;
+    position: relative;
+}
+
+.sidenavMenu>.sidenavItem.sidenavHighlighted>.sidenavNavItem {
+    cursor: default;
+}
+
+.sidenavMenu>.sidenavItem:hover>.sidenavNavItem::after {
+    background: #fff;
+    opacity: 0.15;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+    filter: alpha(opacity=15);
+}
+
+.sidenavMenu>.sidenavItem.sidenavHighlighted>.sidenavNavItem::after, .sidenavMenu>.sidenavItem:hover.sidenavHighlighted>.sidenavNavItem::after {
+    background: #005DFF;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+}
+
+.sidenavMenu>.sidenavItem.sidenavHighlighted.sidenavExpanded>.sidenavNavItem::after, .sidenavMenu>.sidenavItem:hover.sidenavHighlighted.sidenavExpanded>.sidenavNavItem::after {
+    background: #000;
+    background: #000;
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+}
+
+.sidenavMenu>.sidenavItem:hover>.sidenavNavItem .sidenavNavIcon, .sidenavMenu>.sidenavItem.sidenavHighlighted>.sidenavNavItem .sidenavNavIcon {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+}
+
+.sidenavMenu>.sidenavItem:hover>.sidenavNavItem .sidenavNavIcon, .sidenavMenu>.sidenavItem:hover>.sidenavNavItem .sidenavNavText, .sidenavMenu>.sidenavItem.sidenavHighlighted>.sidenavNavItem .sidenavNavIcon, .sidenavMenu>.sidenavItem.sidenavHighlighted>.sidenavNavItem .sidenavNavText {
+    color: #fff;
+}
+
+.sidenavMenu>.sidenavItem:hover>.sidenavNavItem .sidenavNavIcon>*, .sidenavMenu>.sidenavItem:hover>.sidenavNavItem .sidenavNavText>*, .sidenavMenu>.sidenavItem.sidenavHighlighted>.sidenavNavItem .sidenavNavIcon>*, .sidenavMenu>.sidenavItem.sidenavHighlighted>.sidenavNavItem .sidenavNavText>* {
+    color: #fff;
+}
+
+.sidenavMenu>.sidenavItem>.sidenavNavItem {
+    position: relative;
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sidenavMenu>.sidenavItem>.sidenavNavItem:focus {
+    outline: 0;
+}
+
+.sidenavMenu>.sidenavItem>.sidenavNavItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    z-index: -1;
+}
+
+.sidenavMenu>.sidenavItem>.sidenavNavItem .sidenavNavIcon, .sidenavMenu>.sidenavItem>.sidenavNavItem .sidenavNavText {
+    color: #f9dcdd;
+}
+
+.sidenavMenu>.sidenavItem>.sidenavNavItem .sidenavNavIcon>*, .sidenavMenu>.sidenavItem>.sidenavNavItem .sidenavNavText>* {
+    color: #f9dcdd;
+}
+
+.sidenavMenu>.sidenavItem>.sidenavNavItem .sidenavNavIcon {
+    display: block;
+    float: left;
+    width: 55px;
+    height: 50px;
+    margin-right: -6px;
+    /* vertical-align: top; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    line-height: 50px;
+    text-align: center;
+}
+
+.sidenavMenu>.sidenavItem>.sidenavNavItem .sidenavNavIcon+.sidenavNavText {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transition: visibility 0s 0.2s, opacity 0.2s linear;
+    -moz-transition: visibility 0s 0.2s, opacity 0.2s linear;
+    -o-transition: visibility 0s 0.2s, opacity 0.2s linear;
+    -ms-transition: visibility 0s 0.2s, opacity 0.2s linear;
+    transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+
+/* .sidenavSubnav {
+    min-width: 200px;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 64px;
+    background: #fff;
+    border: 1px #bbb solid;
+    -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sidenavSubnav>.sidenavSubnavItem:first-child {
+    margin: 0 24px;
+    line-height: 48px;
+    border-bottom: 1px #ccc solid;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.sidenavSubnav>.sidenavSubnavItem:nth-child(2) {
+    margin-top: 8px;
+}
+
+.sidenavSubnav>.sidenavSubnavItem:last-child {
+    margin-bottom: 8px;
+}
+
+.sidenavSubnav>.sidenavSubnavItem.sidenavSelected>.sidenavNavItem {
+    color: #db3d44;
+    font-weight: bold;
+    background: none;
+    cursor: default;
+}
+
+.sidenavSubnav>.sidenavSubnavItem.sidenavSelected>.sidenavNavItem:hover {
+    background: #fff;
+}
+
+.sidenavSubnav>.sidenavSubnavItem>.sidenavNavItem {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+.sidenavSubnav>.sidenavSubnavItem>.sidenavNavItem:hover {
+    background: #eee;
+}
+
+.sidenavSubnav>.sidenavSubnavItem>.sidenavNavItem:focus {
+    outline: 0;
+} */
+
+.sidenavNav {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+.sidenavNav *, .sidenavNav *:before, .sidenavNav *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.imgIcons{
+    color: #ffffff;
+}

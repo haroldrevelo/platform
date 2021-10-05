@@ -1,0 +1,82 @@
+.background {
+    background-image: url('./../../../Assets/IMG/Headers/header-4.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+    display: flex;
+}
+
+.textContainer {
+    margin: 100px 0 0 -40px;
+}
+
+.title {
+    font-family: Gotham;
+    font-style: oblique;
+    font-size: 30px;
+    color: #103460;
+    line-height: 36px;
+    margin-bottom: -5px;
+}
+
+.welcomeText{
+    font-family: Gotham;
+    font-style: oblique;
+    font-size: 30px;
+    line-height: 36px;
+    color: #f5f5fb;
+}
+
+.spanText{
+    font-family: Nunito;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.emoji{
+    font-size: 18px;
+}
+
+.floatBox{
+    height: 76px;
+    width: 161px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 22px 34px 0 rgba(27,20,119,0.11);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin: 0 0 -30px auto;
+    right: 0;
+  }
+
+.textCurrently{
+    font-family: Gilroy;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 15px;
+    color: #9D9BB6;
+    text-align: center;
+}
+
+.english{
+    color: #192452;
+    font-family: Gilroy;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.flagContainer{
+    display: inline-flex;
+    text-align: center;
+}
+
+.flagContainer img {
+    width: 20px;
+    height: 20px;
+    margin: 4px 5px 0 0;
+
+}
