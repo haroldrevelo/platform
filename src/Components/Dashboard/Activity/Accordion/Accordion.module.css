@@ -3,6 +3,7 @@
     background-color: #FFFFFF;
     box-shadow: 0 22px 34px 0 rgba(27,20,119,0.11);
     margin: 15px 0;
+    cursor: pointer;
 }
 
 .cardContainer{

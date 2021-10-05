@@ -34,6 +34,12 @@ code {
 }
 
 @font-face {
+  font-family: Gilroy;
+  font-style: oblique;
+  src: url('../src/Assets/Fonts/Nunito-SemiBold.ttf');
+}
+
+@font-face {
   font-family: Gotham;
   font-style: oblique;
   src: url('../src/Assets/Fonts/Gotham\ Medium.otf');

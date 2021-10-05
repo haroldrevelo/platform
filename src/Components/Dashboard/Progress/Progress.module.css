@@ -1,5 +1,5 @@
 .container {
-    padding: 0 0 200px 0;
+    padding: 0 0 100px 0;
     margin-bottom: 0;
 }
 
@@ -45,6 +45,48 @@
     background-color: #FFFFFF;
     margin: 0 0 0 72px;
     align-items: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #1884FF;
+    box-shadow: 0 15px 30px 0 rgba(24,132,255,0.54);
+}
+
+.card:hover span{
+    color: #FFFFFF;
+}
+
+.cardSelected {
+    display: flex;
+    height: 79px;
+    width: 207px;
+    border-radius: 4px;
+    background-color: #1884FF;
+    margin: 0 0 0 72px;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 15px 30px 0 rgba(24,132,255,0.54);
+}
+
+.cardSelected span{
+    color: #FFFFFF;
+}
+
+.card2Selected {
+    display: flex;
+    height: 79px;
+    width: 207px;
+    border-radius: 4px;
+    background-color: #1884FF;
+    margin: 0 0 0 60px;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 15px 30px 0 rgba(24,132,255,0.54);
+}
+
+.card2Selected span{
+    color: #FFFFFF;
 }
 
 .card2 {
@@ -55,6 +97,16 @@
     background-color: #FFFFFF;
     margin: 0 0 0 60px;
     align-items: center;
+    cursor: pointer;
+}
+
+.card2:hover {
+    background-color: #1884FF;
+    box-shadow: 0 15px 30px 0 rgba(24,132,255,0.54);
+}
+
+.card2:hover span{
+    color: #FFFFFF;
 }
 
 .spanText {
@@ -119,11 +171,62 @@
     margin: 20px 0 10px 0;
 }
 
-.infoProgress{
+.infoProgress {
     height: 105px;
     width: 332px;
     border-radius: 19px;
-    background-color: rgba(198,198,205,0.13);
+    background-color: rgba(198, 198, 205, 0.13);
     display: flex;
     margin: auto;
+}
+
+.divPoint {
+    position: 'absolute';
+    bottom: '25px';
+    width: '100%';
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center'
+}
+
+.textCompleted {
+    margin: 19px 0 0 38px;
+    color: #FFFFFF;
+    font-family: Gilroy;
+    font-style: oblique;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 17px;
+}
+
+.divHours {
+    display: flex;
+
+}
+
+.divHours h2 {
+    color: #FFFFFF;
+    font-family: Gilroy;
+    font-style: normal;
+    font-size: 45px;
+    letter-spacing: 0;
+    line-height: 56px;
+    margin: 0 15px 0 15px;
+}
+
+.divHours span {
+    color: #FFFFFF;
+    font-family: Gilroy;
+    font-style: oblique;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 29px;
+    margin: auto 0 5px 0;
+}
+
+.divDivisor{
+    height: 50px;
+    width: 1px;
+    border: 1px solid #C6C6CD;
+    margin: auto 0;
 }
