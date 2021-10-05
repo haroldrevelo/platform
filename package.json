@@ -31,7 +31,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "deleteModules": "rm -rf ./node_modules"
+    "deleteModules": "rm -rf ./node_modules rm package-lock.json",
+    "clearCache": "npm cache clean --force"
   },
   "eslintConfig": {
     "extends": [

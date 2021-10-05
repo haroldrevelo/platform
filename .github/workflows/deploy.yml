@@ -15,8 +15,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{matrix.node-version}}
-      - name: delete
+      - name: Delete Modules
         run: npm run deleteModules
+        run: npm run clearCache
       - name: Install Packages
         run: npm install
       - name: Build page
