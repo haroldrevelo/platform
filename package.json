@@ -11,7 +11,6 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.1",
-    "eslint": "^7.32.0",
     "feather-icons-react": "^0.4.3",
     "file-loader": "^6.2.0",
     "html-react-parser": "^1.4.0",
