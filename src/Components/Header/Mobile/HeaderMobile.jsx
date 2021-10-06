@@ -7,7 +7,7 @@ import FeatherIcon from 'feather-icons-react';
 function HeaderMobile() {
     return (
         <div>
-            <div className={`container-fluid ${style.navbarContainer}`}>
+            <div className={`${style.navbarContainer}`}>
                 <nav className={`row ${style.navbar}`}>
                     <div className={`col-2`}>
                         <button role="button" className={style.sidenavToggle}>
