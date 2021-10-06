@@ -8,8 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
-        <Redirect from="/" to="/admin" />
+        <Route path="/" render={(props) => <AdminLayout {...props} />} />
       </Switch>
     </BrowserRouter>    
   );
