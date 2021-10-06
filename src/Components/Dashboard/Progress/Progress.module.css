@@ -5,7 +5,7 @@
 
 .containerStatistics {
     height: 423px;
-    width: 404px;
+    width: auto;
     border-radius: 7px;
     background-color: #1A2D7D;
     box-shadow: 6px 32px 45px 0 rgba(36, 53, 157, 0.13);
