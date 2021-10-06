@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/platform/static/css/main.8682fff1.chunk.css",
+    "main.css": "/platform/static/css/main.921c3ba0.chunk.css",
     "main.js": "/platform/static/js/main.71e292f9.chunk.js",
     "main.js.map": "/platform/static/js/main.71e292f9.chunk.js.map",
     "runtime-main.js": "/platform/static/js/runtime-main.82c0d768.js",
@@ -12,7 +12,7 @@
     "static/js/3.6ce818f3.chunk.js.map": "/platform/static/js/3.6ce818f3.chunk.js.map",
     "index.html": "/platform/index.html",
     "static/css/2.2393a818.chunk.css.map": "/platform/static/css/2.2393a818.chunk.css.map",
-    "static/css/main.8682fff1.chunk.css.map": "/platform/static/css/main.8682fff1.chunk.css.map",
+    "static/css/main.921c3ba0.chunk.css.map": "/platform/static/css/main.921c3ba0.chunk.css.map",
     "static/js/2.fb887f32.chunk.js.LICENSE.txt": "/platform/static/js/2.fb887f32.chunk.js.LICENSE.txt",
     "static/media/index.css": "/platform/static/media/Nunito-SemiBold.45ea1be7.ttf",
     "static/media/Group 9.3213aff1.png": "/platform/static/media/Group 9.3213aff1.png",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.82c0d768.js",
     "static/css/2.2393a818.chunk.css",
     "static/js/2.fb887f32.chunk.js",
-    "static/css/main.8682fff1.chunk.css",
+    "static/css/main.921c3ba0.chunk.css",
     "static/js/main.71e292f9.chunk.js"
   ]
 }
