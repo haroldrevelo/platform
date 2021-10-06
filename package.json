@@ -25,15 +25,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI= react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "deleteModules": "rm -rf ./node_modules rm package-lock.json",
     "clearCache": "npm cache clean --force",
-    "deleteBuild": "rm -rf ./build",
-    "test:ci": "npm test:ci"
+    "deleteBuild": "rm -rf ./build"
   },
   "eslintConfig": {
     "extends": [

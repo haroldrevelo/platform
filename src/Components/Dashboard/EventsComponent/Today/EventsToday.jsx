@@ -5,7 +5,7 @@ import card2 from "./../../../../Assets/IMG/thumbnail.png"
 import useWindowDimensions from "../../../../Layouts/useWindowDimensions";
 
 function EventsToday() {
-    const [size, setSize] = useState(useWindowDimensions())
+    const [size] = useState(useWindowDimensions())
     return (
         <div className={style.container}>
             <div className={style.spanTop}>
@@ -20,7 +20,7 @@ function EventsToday() {
                         <div>
                             <div className={size.width > 768 ? `${style.cardContainer}` : `col-6 ${style.cardContainer}`}>
                                 <div>
-                                    <img src={card1} />
+                                    <img src={card1} alt={''}/>
                                 </div>
                                 <div className={`col-12 col-mb-10 ${style.card}`}>
                                     <span>10:30AM</span>
@@ -31,7 +31,7 @@ function EventsToday() {
                         <div>
                             <div className={size.width > 768 ? `${style.cardContainer}` : `col-6 ${style.cardContainer}`}>
                                 <div>
-                                    <img src={card2} />
+                                    <img src={card2} alt={''}/>
                                 </div>
                                 <div className={`col-12 col-mb-10 ${style.card}`}>
                                     <span>2:15PM</span>
@@ -46,7 +46,7 @@ function EventsToday() {
                             <div>
                                 <div className={style.cardContainer}>
                                     <div>
-                                        <img src={card1} />
+                                        <img src={card1} alt={''}/>
                                     </div>
                                     <div className={` ${style.card}`}>
                                         <span>10:30AM</span>
@@ -57,7 +57,7 @@ function EventsToday() {
                             <div>
                                 <div className={style.cardContainer}>
                                     <div>
-                                        <img src={card2} />
+                                        <img src={card2} alt={''}/>
                                     </div>
                                     <div className={` ${style.card}`}>
                                         <span>2:15PM</span>
@@ -68,7 +68,7 @@ function EventsToday() {
                             <div>
                                 <div className={style.cardContainer}>
                                     <div>
-                                        <img src={card2} />
+                                        <img src={card2} alt={''}/>
                                     </div>
                                     <div className={` ${style.card}`}>
                                         <span>2:15PM</span>
@@ -79,7 +79,7 @@ function EventsToday() {
                             <div>
                                 <div className={style.cardContainer}>
                                     <div>
-                                        <img src={card2} />
+                                        <img src={card2} alt={''}/>
                                     </div>
                                     <div className={` ${style.card}`}>
                                         <span>2:15PM</span>
@@ -90,7 +90,7 @@ function EventsToday() {
                             <div>
                                 <div className={style.cardContainer}>
                                     <div>
-                                        <img src={card2} />
+                                        <img src={card2} alt={''}/>
                                     </div>
                                     <div className={` ${style.card}`}>
                                         <span>2:15PM</span>

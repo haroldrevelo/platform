@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import SliderContent from './SliderContent'
 import Slide from './Slide'
 import Arrow from './Arrow'
@@ -12,7 +12,7 @@ let getWidth = () => window.innerWidth
  */
 const Slider = props => {
   const { slides } = props
-  const [size, setSize] = useState(useWindowDimensions())
+  const [size] = useState(useWindowDimensions())
 
   const firstSlide = slides[0]
   const secondSlide = slides[1]
@@ -87,10 +87,12 @@ const Slider = props => {
         clearInterval(interval);
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSlide])
 
   useEffect(() => {
     if (transition === 0) setState({ ...state, transition: 0.45, transitioning: false })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [transition])
 
   const throttleArrows = () => {

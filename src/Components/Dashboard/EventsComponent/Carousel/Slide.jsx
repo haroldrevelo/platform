@@ -2,7 +2,7 @@ import React, { memo, useState } from 'react'
 import useWindowDimensions from '../../../../Layouts/useWindowDimensions'
 
 const Slide = ({ content, width }) => {
-  const [size, setSize] = useState(useWindowDimensions())
+  const [size] = useState(useWindowDimensions())
   let desk = {
     height: '100%',
     width: `${width}px`,

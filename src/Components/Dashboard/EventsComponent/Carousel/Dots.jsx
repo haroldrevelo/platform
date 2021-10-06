@@ -19,7 +19,7 @@ const Dot = ({ active }) => {
 const MemoDot = memo(Dot)
 
 const Dots = ({ slides, activeSlide }) => {
-  const [size, setSize] = useState(useWindowDimensions())
+  const [size] = useState(useWindowDimensions())
   var text = [{ one: 'Youth Talent & <br/> Education', two: 'May, 20' }, { one: 'Education without <br/> borders', two: 'May, 15' }, { one: 'Developing your <br/> talents', two: 'May, 20' }]
   return (
     <>

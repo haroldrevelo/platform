@@ -4,7 +4,7 @@ import leftArrow from '../img/left-arrow.svg'
 import rightArrow from '../img/right-arrow.svg'
 
 const Arrow = ({ direction, handleClick }) => {
-  const [size, setSize] = useState(useWindowDimensions())
+  const [size] = useState(useWindowDimensions())
 
   let right = {
     display: 'flex',
@@ -109,12 +109,12 @@ const Arrow = ({ direction, handleClick }) => {
         size.width > 768 ?
           <div onClick={handleClick} style={direction === 'right' ? right : left}>
             {direction === 'right' ?
-              <img style={{ color: '#3E3A6F', height: '26px', width: '15px' }} src={rightArrow} /> : <img style={{ color: '#3E3A6F', height: '26px', width: '15px' }} src={leftArrow} />}
+              <img style={{ color: '#3E3A6F', height: '26px', width: '15px' }} src={rightArrow} alt={''}/> : <img style={{ color: '#3E3A6F', height: '26px', width: '15px' }} src={leftArrow} alt={''}/>}
           </div>
           :
           <div onClick={handleClick} style={direction === 'right' ? rightMobile : leftMobile}>
             {direction === 'right' ?
-              <img style={{ color: '#3E3A6F', height: '26px', width: '15px' }} src={rightArrow} /> : <img style={{ color: '#3E3A6F', height: '26px', width: '15px' }} src={leftArrow} />}
+              <img style={{ color: '#3E3A6F', height: '26px', width: '15px' }} src={rightArrow} alt={''}/> : <img style={{ color: '#3E3A6F', height: '26px', width: '15px' }} src={leftArrow} alt={''}/>}
           </div> 
       }
 

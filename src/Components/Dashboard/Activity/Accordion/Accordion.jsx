@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import style from "./Accordion.module.css"
 import icon1 from "./../../../../Assets/IMG/ic-followers.png"
 import icon2 from "../../../../Assets/IMG/ic-events.png"
@@ -12,7 +12,7 @@ function Accordion() {
     const [arrowToggle3, setarrowToggle3] = useState(false)
     
     function onClicToggle (num){
-        if(num == 1){
+        if(num === 1){
             if(arrowToggle1){
                 setarrowToggle1(false)
             } else if(arrowToggle2){
@@ -25,7 +25,7 @@ function Accordion() {
                 setarrowToggle1(true)
             }
         }
-        if(num == 2){
+        if(num === 2){
             if(arrowToggle1){
                 setarrowToggle1(false)
                 setarrowToggle2(true)
@@ -38,7 +38,7 @@ function Accordion() {
                 setarrowToggle2(true)
             }
         }
-        if(num == 3){
+        if(num === 3){
             if(arrowToggle1){
                 setarrowToggle1(false)
                 setarrowToggle3(true)
@@ -58,13 +58,13 @@ function Accordion() {
             <div className={`${style.container}`} onClick={()=>onClicToggle(1)}>
                 <div className={`${style.cardContainer}`}>
                     <div className={`col-3 col-mb-1 ${style.imgIcon}`}>
-                        <img src={icon1} />
+                        <img src={icon1} alt={''}/>
                     </div>
                     <div className={`col-9 ${style.textP}`}>
                         <p>You have new 5 followers including <strong>Kathryn Crawford</strong> and <strong>Piper Shaw</strong></p>
                     </div>
                     <div className={`${style.divToggle}`}>
-                        <img src={arrowToggle1 ? arrowUp : arrowDown} />
+                        <img src={arrowToggle1 ? arrowUp : arrowDown} alt={''} />
                     </div>
                 </div>
                 <div className={style.textOpen} style={arrowToggle1 ? {} : { display: 'none'}}>
@@ -76,13 +76,13 @@ function Accordion() {
             <div className={`${style.container}`} onClick={()=>onClicToggle(2)}>
                 <div className={`${style.cardContainer}`}>
                     <div className={`col-3 col-mb-1 ${style.imgIcon}`}>
-                        <img src={icon2} />
+                        <img src={icon2} alt={''} />
                     </div>
                     <div className={`col-9 ${style.textP}`}>
                         <p>3 new events were added to your calendar</p>
                     </div>
                     <div className={`${style.divToggle}`}>
-                        <img src={arrowToggle2 ? arrowUp : arrowDown} />
+                        <img src={arrowToggle2 ? arrowUp : arrowDown} alt={''} />
                     </div>
                 </div>
                 <div className={style.textOpen} style={arrowToggle2 ? {} : { display: 'none'}}>
@@ -94,13 +94,13 @@ function Accordion() {
             <div className={`${style.container}`} onClick={()=>onClicToggle(3)}>
                 <div className={`${style.cardContainer}`}>
                     <div className={`col-3 col-mb-1 ${style.imgIcon}`}>
-                        <img src={icon3} />
+                        <img src={icon3} alt={''}/>
                     </div>
                     <div className={`col-9 ${style.textP}`}>
                         <p>You have 3 pending readings to complete 🤓</p>
                     </div>
                     <div className={`${style.divToggle}`}>
-                        <img src={arrowToggle3 ? arrowUp : arrowDown} />
+                        <img src={arrowToggle3 ? arrowUp : arrowDown} alt={''}/>
                     </div>
                 </div>
                 <div className={style.textOpen} style={arrowToggle3 ? {} : { display: 'none'}}>
