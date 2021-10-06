@@ -2,57 +2,59 @@ import React, { useState } from "react";
 import style from "./Progress.module.css"
 import "react-circular-progressbar/dist/styles.css";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import useWindowDimensions from "../../../Layouts/useWindowDimensions";
 
 function Progress() {
-    const [percentage, setPercentage] = useState(55)
     const [done, setDone] = useState(29)
     const [missing, setMissing] = useState(16)
     const [selected, setSelected] = useState()
+    const [percentage, setPercentage] = useState(55)
+    const [size, setSize] = useState(useWindowDimensions())
 
     const infoArray = [
-        {percentage: 44, done: 4, missing: 5},
-        {percentage: 100, done: 10, missing: 0},
-        {percentage: 80, done: 4, missing: 1},
-        {percentage: 64, done: 9, missing: 5},
-        {percentage: 40, done: 2, missing: 5}
+        { percentage: 44, done: 40, missing: 50 },
+        { percentage: 100, done: 10, missing: 0 },
+        { percentage: 80, done: 30, missing: 40 },
+        { percentage: 64, done: 90, missing: 50 },
+        { percentage: 40, done: 20, missing: 30 }
     ]
 
-    function handleonClic(num){
-            if(num == 0){
-                setPercentage(infoArray[num].percentage)
-                setDone(infoArray[num].done)
-                setMissing(infoArray[num].missing)
-                setSelected(num)
-            }
-            if(num == 1){
-                setPercentage(infoArray[num].percentage)
-                setDone(infoArray[num].done)
-                setMissing(infoArray[num].missing)
-                setSelected(num)
-            }   
-            if(num == 2){
-                setPercentage(infoArray[num].percentage)
-                setDone(infoArray[num].done)
-                setMissing(infoArray[num].missing)
-                setSelected(num)
-            }     
-            if(num == 3){
-                setPercentage(infoArray[num].percentage)
-                setDone(infoArray[num].done)
-                setMissing(infoArray[num].missing)
-                setSelected(num)
-            }  
-            if(num == 4){
-                setPercentage(infoArray[num].percentage)
-                setDone(infoArray[num].done)
-                setMissing(infoArray[num].missing)
-                setSelected(num)
-            } 
+    function handleonClic(num) {
+        if (num == 0) {
+            setPercentage(infoArray[num].percentage)
+            setDone(infoArray[num].done)
+            setMissing(infoArray[num].missing)
+            setSelected(num)
+        }
+        if (num == 1) {
+            setPercentage(infoArray[num].percentage)
+            setDone(infoArray[num].done)
+            setMissing(infoArray[num].missing)
+            setSelected(num)
+        }
+        if (num == 2) {
+            setPercentage(infoArray[num].percentage)
+            setDone(infoArray[num].done)
+            setMissing(infoArray[num].missing)
+            setSelected(num)
+        }
+        if (num == 3) {
+            setPercentage(infoArray[num].percentage)
+            setDone(infoArray[num].done)
+            setMissing(infoArray[num].missing)
+            setSelected(num)
+        }
+        if (num == 4) {
+            setPercentage(infoArray[num].percentage)
+            setDone(infoArray[num].done)
+            setMissing(infoArray[num].missing)
+            setSelected(num)
+        }
     }
 
     return (
-        <div className={`mt-5 d-flex ${style.container}`}>
-            <div className={`col-4 ${style.containerStatistics}`}>
+        <div className={size.width > 768 ? `mt-5 d-flex ${style.container}` : `mt-5 ${style.container}`}>
+            <div className={`col-12 col-md-4 ${style.containerStatistics}`}>
                 <div className={style.titleProgress}>
                     <h3>Progress overview</h3>
                 </div>
@@ -69,7 +71,7 @@ function Progress() {
                     />
                 </div>
                 <div className={`${style.infoProgress}`}>
-                    <div style={{width: '50%'}}>
+                    <div style={{ width: '50%' }}>
                         <div style={{ display: "flex", width: '80%' }}>
                             <div style={{
                                 position: 'absolute',
@@ -96,7 +98,7 @@ function Progress() {
                     <div className={style.divDivisor}>
                         <hr />
                     </div>
-                    <div style={{width: '50%'}}>
+                    <div style={{ width: '50%' }}>
                         <div style={{ display: "flex", width: '80%' }}>
                             <div style={{
                                 position: 'absolute',
@@ -122,7 +124,7 @@ function Progress() {
                     </div>
                 </div>
             </div>
-            <div className={'col-8'}>
+            <div className={size.width > 768 ? 'col-12 col-mb-8' : 'col-12 col-mb-8 mt-5'}>
                 <div className={'row'}>
                     <div className={`col-2 ${style.divTitle}`}>
                         <div>
@@ -133,50 +135,98 @@ function Progress() {
                         <hr />
                     </div>
                 </div>
-                <div className={'row mt-5'}>
-                    <div onClick={()=>{handleonClic(0)}} className={`col-3 ${selected == 0 ? style.cardSelected : style.card}`} >
-                        <div className={style.spanText}>
-                            <span>Total <br /> Webinars </span>
-                        </div>
-                        <div className={style.spanNum}>
-                            <span>9</span>
-                        </div>
-                    </div>
-                    <div onClick={()=>{handleonClic(1)}} className={`col-3 ${selected == 1 ? style.card2Selected : style.card2}`}>
-                        <div className={style.spanText}>
-                            <span>Pending <br /> Assignments </span>
-                        </div>
-                        <div className={style.spanNum}>
-                            <span>0</span>
-                        </div>
-                    </div>
-                    <div onClick={()=>{handleonClic(2)}} className={`col-3 ${selected == 2 ? style.card2Selected : style.card2}`}>
-                        <div className={style.spanText}>
-                            <span>Total <br /> Units </span>
-                        </div>
-                        <div className={style.spanNum}>
-                            <span>5</span>
-                        </div>
-                    </div>
-                </div>
-                <div className={'row mt-5'}>
-                    <div onClick={()=>{handleonClic(3)}} className={`col-3 ${selected == 3 ? style.cardSelected : style.card}`}>
-                        <div className={style.spanText}>
-                            <span>Total <br /> Readings </span>
-                        </div>
-                        <div className={style.spanNum}>
-                            <span>14</span>
-                        </div>
-                    </div>
-                    <div onClick={()=>{handleonClic(4)}} className={`col-3 ${selected == 4 ? style.card2Selected : style.card2}`}>
-                        <div className={style.spanText}>
-                            <span>Total <br /> Videos </span>
-                        </div>
-                        <div className={style.spanNum}>
-                            <span>0</span>
-                        </div>
-                    </div>
-                </div>
+                {
+                    size.width > 768 ?
+                        <>
+                            <div className={'row mt-5'}>
+                                <div onClick={() => { handleonClic(0) }} className={`col-2 ${selected == 0 ? style.cardSelected : style.card}`} >
+                                    <div className={style.spanText}>
+                                        <span>Total <br /> Webinars </span>
+                                    </div>
+                                    <div className={style.spanNum}>
+                                        <span>9</span>
+                                    </div>
+                                </div>
+                                <div onClick={() => { handleonClic(1) }} className={`col-2 ${selected == 1 ? style.card2Selected : style.card2}`}>
+                                    <div className={style.spanText}>
+                                        <span>Pending <br /> Assignments </span>
+                                    </div>
+                                    <div className={style.spanNum}>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <div onClick={() => { handleonClic(2) }} className={`col-2 ${selected == 2 ? style.card2Selected : style.card2}`}>
+                                    <div className={style.spanText}>
+                                        <span>Total <br /> Units </span>
+                                    </div>
+                                    <div className={style.spanNum}>
+                                        <span>5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={'row mt-5'}>
+                                <div onClick={() => { handleonClic(3) }} className={`col-2 ${selected == 3 ? style.cardSelected : style.card}`}>
+                                    <div className={style.spanText}>
+                                        <span>Total <br /> Readings </span>
+                                    </div>
+                                    <div className={style.spanNum}>
+                                        <span>14</span>
+                                    </div>
+                                </div>
+                                <div onClick={() => { handleonClic(4) }} className={`col-2 ${selected == 4 ? style.card2Selected : style.card2}`}>
+                                    <div className={style.spanText}>
+                                        <span>Total <br /> Videos </span>
+                                    </div>
+                                    <div className={style.spanNum}>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </>
+                        :
+                        <>
+                            <div className={'row mt-5'}>
+                                <div onClick={() => { handleonClic(0) }} className={`col-5 ${selected == 0 ? style.cardSelected : style.card}`} >
+                                    <div className={style.spanText}>
+                                        <span>Total <br /> Webinars </span>
+                                    </div>
+                                    <div className={style.spanNum}>
+                                        <span>9</span>
+                                    </div>
+                                </div>
+                                <div onClick={() => { handleonClic(1) }} className={`col-5 ${selected == 1 ? style.card2Selected : style.card2}`}>
+                                    <div className={style.spanText}>
+                                        <span>Pending <br /> Assignments </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={'row'}>
+                                <div onClick={() => { handleonClic(3) }} className={`col-5 ${selected == 3 ? style.cardSelected : style.card}`}>
+                                    <div className={style.spanText}>
+                                        <span>Total <br /> Readings </span>
+                                    </div>
+                                    <div className={style.spanNum}>
+                                        <span>14</span>
+                                    </div>
+                                </div>
+                                <div onClick={() => { handleonClic(4) }} className={`col-5 ${selected == 4 ? style.card2Selected : style.card2}`}>
+                                    <div className={style.spanText}>
+                                        <span>Total <br /> Videos </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={'row'}>
+                                <div onClick={() => { handleonClic(2) }} className={`col-5 ${selected == 2 ? style.card2Selected : style.card2}`}>
+                                    <div className={style.spanText}>
+                                        <span>Total <br /> Units </span>
+                                    </div>
+                                    <div className={style.spanNum}>
+                                        <span>5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </>
+                }
                 <div className="row mt-5">
                     <div className={style.confirm}>
                         <span>Confirm your account details Please confirm your email and phone number. 😰</span>

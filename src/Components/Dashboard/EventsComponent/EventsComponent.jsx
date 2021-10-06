@@ -12,12 +12,12 @@ function EventsComponent() {
                 <h2 className={style.title}>Events</h2>
             </div>
             <div className="row mt-5">
-                <div className="col-8">
+                <div className="col-12 col-md-8">
                     <div>
                         <Slider slides={images} />
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-12 col-md-4">
                     <EventsToday/>
                 </div>
 

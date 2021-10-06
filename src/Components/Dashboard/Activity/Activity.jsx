@@ -7,12 +7,12 @@ function Activity() {
     return (
         <div className="col-12">
             <div className="row">
-                <div className={`col-1 ${style.divTitle}`}>
+                <div className={`col-1`}>
                     <div>
                         <h2 className={style.title}>Activity</h2>
                     </div>
                 </div>
-                <div className={`col-10 ${style.divHr}`}>
+                <div className={`col-6 col-mb-10 ${style.divHr}`}>
                     <hr />
                 </div>
                 <div className={`col-1 ${style.buttonContainer}`}>

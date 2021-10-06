@@ -50,10 +50,10 @@
 
 .card:hover {
     background-color: #1884FF;
-    box-shadow: 0 15px 30px 0 rgba(24,132,255,0.54);
+    box-shadow: 0 15px 30px 0 rgba(24, 132, 255, 0.54);
 }
 
-.card:hover span{
+.card:hover span {
     color: #FFFFFF;
 }
 
@@ -66,10 +66,10 @@
     margin: 0 0 0 72px;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 15px 30px 0 rgba(24,132,255,0.54);
+    box-shadow: 0 15px 30px 0 rgba(24, 132, 255, 0.54);
 }
 
-.cardSelected span{
+.cardSelected span {
     color: #FFFFFF;
 }
 
@@ -82,10 +82,10 @@
     margin: 0 0 0 60px;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 15px 30px 0 rgba(24,132,255,0.54);
+    box-shadow: 0 15px 30px 0 rgba(24, 132, 255, 0.54);
 }
 
-.card2Selected span{
+.card2Selected span {
     color: #FFFFFF;
 }
 
@@ -102,10 +102,10 @@
 
 .card2:hover {
     background-color: #1884FF;
-    box-shadow: 0 15px 30px 0 rgba(24,132,255,0.54);
+    box-shadow: 0 15px 30px 0 rgba(24, 132, 255, 0.54);
 }
 
-.card2:hover span{
+.card2:hover span {
     color: #FFFFFF;
 }
 
@@ -201,7 +201,6 @@
 
 .divHours {
     display: flex;
-
 }
 
 .divHours h2 {
@@ -224,9 +223,58 @@
     margin: auto 0 5px 0;
 }
 
-.divDivisor{
+.divDivisor {
     height: 50px;
     width: 1px;
     border: 1px solid #C6C6CD;
     margin: auto 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: block !important;
+    }
+    .containerStatistics {
+        display: block !important;
+        padding: 15px;
+        height: 400px;
+    }
+    .divTitle {
+        margin: 0;
+    }
+    .divHr hr {
+        height: 2px !important;
+        margin: 19px 0 0 100px;
+        width: 180px !important;
+        padding: 0;
+    }
+    .card {
+        margin: 30px 10px 30px 15px;
+    }
+    .cardSelected {
+        margin: 30px 10px 30px 15px;
+    }
+    .card2 {
+        margin: 30px 10px 30px 15px;
+    }
+    .cardSelected2 {
+        margin: 30px 10px 30px 15px;
+    }
+    .infoProgress {
+        width: 300px;
+    }
+    .confirm {
+        height: 130px;
+        width: 340px !important;
+        background-image: url('./../../../Assets/IMG/Oval + Oval + Oval Mask.png');
+        align-items: center;
+        margin: 0 0 0 10px;
+        color: #FFFFFF;
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 26px;
+        border-radius: 5px;
+    }
 }

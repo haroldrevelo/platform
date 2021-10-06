@@ -59,3 +59,42 @@
     color: #192452;
     padding-left: 9px;
 }
+
+.containerFull{
+    display: flex;
+    width: auto;
+    height: 220px;
+    overflow-y: hidden; 
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+    }
+    .divToday {
+        margin: 0;
+        width: 300px;
+    }
+    .divHr hr {
+        width: 170px !important;
+        padding: 0;
+    }
+    .cardContainer {
+        display: inline-block;
+        height: 200px;
+        width: 150px;
+        align-items: center;
+        padding: 10px;
+        margin: 20px 10px 0 5px;
+    }
+    .card h6 {
+        padding-left: 10px;
+        width: 100%;
+        margin-block-end: 0 !important;
+        margin-inline-end: 0 !important;
+    }
+    .card span {
+        padding-left: 10px;
+    }
+}

@@ -3,14 +3,16 @@ import SliderContent from './SliderContent'
 import Slide from './Slide'
 import Arrow from './Arrow'
 import Dots from './Dots'
+import useWindowDimensions from '../../../../Layouts/useWindowDimensions'
 
-const getWidth = () => window.innerWidth
+let getWidth = () => window.innerWidth
 
 /**
  * @function Slider
  */
 const Slider = props => {
   const { slides } = props
+  const [size, setSize] = useState(useWindowDimensions())
 
   const firstSlide = slides[0]
   const secondSlide = slides[1]
@@ -139,7 +141,7 @@ const Slider = props => {
   }
 
   return (
-    <div style={SliderCSS} ref={sliderRef}>
+    <div style={size.width > 768 ? SliderCSS : SliderCSSMobile } ref={sliderRef}>
       <SliderContent
         translate={translate}
         transition={transition}
@@ -162,6 +164,15 @@ const SliderCSS = {
   position: 'relative',
   height: '280px',
   width: '802px',
+  margin: '0 auto',
+  overflow: 'hidden',
+  whiteSpace: 'nowrap',
+}
+
+const SliderCSSMobile = {
+  position: 'relative',
+  height: '320px',
+  width: '100%',
   margin: '0 auto',
   overflow: 'hidden',
   whiteSpace: 'nowrap',

@@ -1,37 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Activity from '../Components/Dashboard/Activity/Activity';
 import Events from '../Components/Dashboard/EventsComponent/EventsComponent';
 import Progress from '../Components/Dashboard/Progress/Progress';
 import Welcome from './../Components/Dashboard/Welcome/Welcome'
+import style from './Dashboard.module.css'
 
 function Dashboard() {
-
-    function getWindowDimensions() {
-        const { innerWidth: width, innerHeight: height } = window;
-        return {
-            width,
-            height
-        };
-    }
-
-    function useWindowDimensions() {
-        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
-
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-
-        return windowDimensions;
-    }
-
-    console.log(getWindowDimensions())
     return (
-        <div className="container" style={{ paddingLeft: '10vh' }}>
+        <div className={`${style.dashboarContainer} container`}>
             <div className="row">
                 <Welcome />
             </div>

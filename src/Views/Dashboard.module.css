@@ -1,0 +1,9 @@
+.dashboarContainer {
+    padding-left: 10vh;
+}
+
+@media (max-width: 768px) {
+    .dashboarContainer {
+        padding-left: 0;
+    }
+}

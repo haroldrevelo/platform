@@ -9,7 +9,6 @@ const SliderContent = props => (
     width: `${props.width}px`,
     display: 'flex'
   }}
-  {...console.log(props)}
   >
     
     {props.children}

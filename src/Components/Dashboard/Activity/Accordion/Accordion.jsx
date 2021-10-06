@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./Accordion.module.css"
 import icon1 from "./../../../../Assets/IMG/ic-followers.png"
 import icon2 from "../../../../Assets/IMG/ic-events.png"
 import icon3 from "../../../../Assets/IMG/ic-assignments.png"
 import arrowDown from "./../../../../Assets/IMG/Arrow-Down-Bold.png"
 import arrowUp from "./../../../../Assets/IMG/Arrow-Up-Bold-2.png"
-
-
 
 function Accordion() {
     const [arrowToggle1, setarrowToggle1] = useState(true)
@@ -59,10 +57,10 @@ function Accordion() {
         <>
             <div className={`${style.container}`} onClick={()=>onClicToggle(1)}>
                 <div className={`${style.cardContainer}`}>
-                    <div className={`col-1 ${style.imgIcon}`}>
+                    <div className={`col-3 col-mb-1 ${style.imgIcon}`}>
                         <img src={icon1} />
                     </div>
-                    <div className={`col-10 ${style.textP}`}>
+                    <div className={`col-9 ${style.textP}`}>
                         <p>You have new 5 followers including <strong>Kathryn Crawford</strong> and <strong>Piper Shaw</strong></p>
                     </div>
                     <div className={`${style.divToggle}`}>
@@ -77,10 +75,10 @@ function Accordion() {
             </div>
             <div className={`${style.container}`} onClick={()=>onClicToggle(2)}>
                 <div className={`${style.cardContainer}`}>
-                    <div className={`col-1 ${style.imgIcon}`}>
+                    <div className={`col-3 col-mb-1 ${style.imgIcon}`}>
                         <img src={icon2} />
                     </div>
-                    <div className={`col-10 ${style.textP}`}>
+                    <div className={`col-9 ${style.textP}`}>
                         <p>3 new events were added to your calendar</p>
                     </div>
                     <div className={`${style.divToggle}`}>
@@ -95,10 +93,10 @@ function Accordion() {
             </div>
             <div className={`${style.container}`} onClick={()=>onClicToggle(3)}>
                 <div className={`${style.cardContainer}`}>
-                    <div className={`col-1 ${style.imgIcon}`}>
+                    <div className={`col-3 col-mb-1 ${style.imgIcon}`}>
                         <img src={icon3} />
                     </div>
-                    <div className={`col-10 ${style.textP}`}>
+                    <div className={`col-9 ${style.textP}`}>
                         <p>You have 3 pending readings to complete 🤓</p>
                     </div>
                     <div className={`${style.divToggle}`}>

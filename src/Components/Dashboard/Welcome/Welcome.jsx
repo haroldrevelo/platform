@@ -18,11 +18,11 @@ function Welcome() {
             <div>
                 <h2 className={style.title}>Dashboard</h2>
             </div>
-            <div className={style.background}>
-                <div className="col-3">
-                    <img src={WelcomeGuy} />
+            <div className={`col-12 ${style.background}`}>
+                <div className={`col-12 col-md-3`}>
+                    <img className={style.imgGuy} src={WelcomeGuy} />
                 </div>
-                <div className={`col-9 ${style.textContainer}`}>
+                <div className={`col-12 col-md-9 ${style.textContainer}`}>
                     <h3 className={style.welcomeText}>Welcome back, Clarence</h3>
                     <span className={style.spanText}>Ta-da! You're up to date.</span><span className={style.emoji}>🥳</span>
                 </div>

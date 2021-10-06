@@ -20,7 +20,7 @@
     padding: 0;
 }
 
-.buttonContainer{
+.buttonContainer {
     text-align: end;
 }
 
@@ -41,4 +41,14 @@
     letter-spacing: -0.43px;
     line-height: 26px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .buttonContainer {
+        display: none;
+    }
+    .divHr hr {
+        margin: 19px 0 0 100px;
+        width: 200px !important;
+    }
 }
