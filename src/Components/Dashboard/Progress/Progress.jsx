@@ -124,7 +124,7 @@ function Progress() {
                     </div>
                 </div>
             </div>
-            <div className={size.width > 768 ? 'col-12 col-mb-8' : 'col-12 col-mb-8 mt-5'}>
+            <div className={size.width > 768 ? 'col-mb-8' : 'col-12 col-mb-8 mt-5'}>
                 <div className={'row'}>
                     <div className={`col-2 ${style.divTitle}`}>
                         <div>

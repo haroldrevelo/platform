@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" render={(props) => <AdminLayout {...props} />} />
+        <Route path="/" render={(props) => <AdminLayout {...props} />}/>
       </Switch>
     </BrowserRouter>    
   );
