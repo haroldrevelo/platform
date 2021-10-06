@@ -21,8 +21,10 @@ jobs:
         run: npm run clearCache
       - name: Install Packages
         run: npm install
-      - name: Delete Last Build
-        run: npm run deleteBuild
+      - name: npm test:ci
+        run: npm run test:ci
+        env:
+          CI:''
       - name: Build page
         run: npm run build
       - name: Deploy to gh-pages
