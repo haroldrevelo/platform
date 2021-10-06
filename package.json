@@ -32,7 +32,8 @@
     "deploy": "gh-pages -d build",
     "deleteModules": "rm -rf ./node_modules rm package-lock.json",
     "clearCache": "npm cache clean --force",
-    "deleteBuild": "rm -rf ./build"
+    "deleteBuild": "rm -rf ./build",
+    "test:ci": "npm test:ci"
   },
   "eslintConfig": {
     "extends": [
